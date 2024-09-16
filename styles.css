@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.iphone {
+    position: relative;
+    width: 430px; /* iPhone 14 Pro Max width */
+    height: 932px; /* iPhone 14 Pro Max height */
+    border-radius: 60px;
+    background-image: url("walk.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.dynamic-island {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: height 0.7s ease, transform 0.7s ;
+    transition: 0.5s;
+}
+.dynamic-island.active{
+    height: 150px;
+    width: 155px;
+    border-radius: 32px;
+    background-image: url("giphy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    transition: 0.4s linear;
+}
+
+.dynamic-island.rem{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: height 0.7s, transform 0.6s ;
+}
+
+.dynamic-island.notfi{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 90px;
+    border-radius: 90px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: height 0.6s, transform 0.6s;
+   transition: 0.6s linear;
+}
+.vid{
+    display: none;
+}
